@@ -37,3 +37,12 @@ const requestHandler = (req, res) => {
 
 
 module.exports = requestHandler;
+
+// * Other ways to export a module:
+
+//*Method 1:
+//? module.exports.handler = requestHandler
+//? module.exports.someText = 'some text';
+
+//*Method 2:
+//? module.exports = {handler: requestHandler, someText: 'some text'};
